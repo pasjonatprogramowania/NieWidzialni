@@ -1,9 +1,11 @@
 <template>
-  <Intro />
+  <Hero />
+  <Support />
 </template>
 
 <script setup>
-import Intro from "./components/Intro.vue";
+import Hero from "./components/Hero.vue";
+import Support from "./components/Support.vue";
 </script>
 
 <style lang="scss" scoped>
