@@ -1,6 +1,8 @@
 <template>
-  <Hero />
-  <Support />
+  <div class="w-full bg-purple-prim px-6">
+    <Hero />
+    <Support />
+  </div>
 </template>
 
 <script setup>
