@@ -1,56 +1,57 @@
 <template>
-  <div class="bg-purple-dark-prim relative py-4">
+  <div class="bg-purple-dark-prim relative py-20">
     <img
-      src="../assets/dots.png"
-      class="absolute right-4 top-8 bottom-0"
+      src="../assets/dots.svg"
+      class="absolute right-4 top-8 bottom-0 w-36 opacity-40"
       alt=""
     />
-    <h1
-      class="
-        sm:text-4xl sm:text-center
-        text-left text-5xl
-        sm:py-20
-        py-20
-        font-bold
-        text-white
-      "
-    >
-      Dlaczego warto wesprzec nasz projekt ?
-    </h1>
-    <div v-for="(val, k) in reasons" :key="k">
-      <div
-        class="
-          bg-blue-prim
-          p-8
-          my-4
-          w-10
-          h-10
-          rounded-lg
-          grid
-          place-content-center
-        "
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="white"
-          class="w-10 h-10"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            :d="val.icon"
-          ></path>
-        </svg>
-      </div>
-
+    <div class="grid md:grid-cols-3 grid-cols-1 gap-4">
       <div>
-        <h1 class="my-2 text-3xl">{{ val.name }}</h1>
-        <p class="text-lg">
-          {{ val.des }}
-        </p>
+        <h1 class="text-left text-4xl sm:py-20 py-20 font-bold text-white">
+          Dlaczego warto wesprzec nasz projekt ?
+        </h1>
+        <img
+          src="../assets/dots2.svg"
+          class="absolute left-4 bottom-4 hidden md:block w-72 opacity-40"
+          alt=""
+        />
+      </div>
+      <div class="grid md:grid-cols-2 grid-cols-1 col-span-2 gap-4">
+        <div v-for="(val, k) in reasons" :key="k">
+          <div
+            class="
+              bg-blue-prim
+              p-8
+              my-4
+              w-10
+              h-10
+              rounded-lg
+              grid
+              place-content-center
+            "
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="white"
+              class="w-10 h-10"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                :d="val.icon"
+              ></path>
+            </svg>
+          </div>
+          <div>
+            <h1 class="my-2 text-2xl font-bold">{{ val.name }}</h1>
+            <p class="text-md">
+              {{ val.des }}
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
