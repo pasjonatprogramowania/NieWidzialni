@@ -1,8 +1,8 @@
 <template>
-  <div class="bg-purple-prim relative container">
+  <div class="bg-purple-dark-prim relative py-4">
     <img
       src="../assets/dots.png"
-      class="absolute right-0 top-0 bottom-0"
+      class="absolute right-4 top-8 bottom-0"
       alt=""
     />
     <h1
@@ -20,7 +20,7 @@
     <div v-for="(val, k) in reasons" :key="k">
       <div
         class="
-          bg-purple-dark-prim
+          bg-blue-prim
           p-8
           my-4
           w-10
@@ -53,7 +53,6 @@
         </p>
       </div>
     </div>
-    <img src="../assets/dots.png" class="py-2" alt="" />
   </div>
 </template>
 

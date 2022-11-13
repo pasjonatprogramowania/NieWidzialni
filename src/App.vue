@@ -1,7 +1,7 @@
 <template>
-  <div class="w-full bg-purple-prim px-6">
-    <Hero />
-    <Support />
+  <div class="w-full bg-purple-prim">
+    <Hero class="px-6" />
+    <Support class="px-6" />
   </div>
 </template>
 
