@@ -1,42 +1,43 @@
 <template>
   <div class="w-full">
-    <h1
-      class="
-        sm:text-4xl
-        text-left text-5xl
-        sm:py-20
-        py-20
-        font-bold
-        text-white
-        px-6
-      "
-    >
-      Widzialny zespół
-    </h1>
-    <carousel :items-to-show="1">
-      <slide
-        v-for="(slide, i) in slides"
-        :key="i"
-        slideWidth="10"
-        class="columns"
+    <div>
+      <h1
+        class="
+          sm:text-4xl
+          text-left text-5xl
+          sm:py-20
+          py-20
+          font-bold
+          text-white
+        "
       >
-        <div class="grid md:grid-cols-2 grid grid-cols-1 gap-20">
-          <img
-            :src="slide.img"
-            :alt="slide.name"
-            class="h-80 w-full object-cover rounded-3xl mr-4"
-          />
-          <Card>
-            <template #header>{{ slide.name }}</template>
-            <template #description>{{ slide.description }}</template>
-          </Card>
-        </div>
-      </slide>
-      <template #addons>
-        <navigation />
-        <pagination />
-      </template>
-    </carousel>
+        Widzialny zespół
+      </h1>
+      <carousel :items-to-show="1" class="rounded-3xl overflow-hidden">
+        <slide
+          v-for="(slide, i) in slides"
+          :key="i"
+          slideWidth="10"
+          class="columns"
+        >
+          <div class="grid md:grid-cols-2 grid grid-cols-1 gap-20">
+            <img
+              :src="slide.img"
+              :alt="slide.name"
+              class="h-80 w-full object-cover rounded-3xl mr-4"
+            />
+            <Card>
+              <template #header>{{ slide.name }}</template>
+              <template #description>{{ slide.description }}</template>
+            </Card>
+          </div>
+        </slide>
+        <template #addons>
+          <navigation />
+          <pagination />
+        </template>
+      </carousel>
+    </div>
   </div>
 </template>
 

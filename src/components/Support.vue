@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-purple-dark-prim relative py-20">
+  <div class="bg-purple-dark-prim relative py-20 text-white">
     <img
       src="../assets/dots.svg"
       class="absolute right-4 top-8 bottom-0 w-36 opacity-40"
@@ -83,4 +83,5 @@ const reasons = [
 </script>
 
 <style lang="scss" scoped>
+
 </style>

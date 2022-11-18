@@ -15,7 +15,8 @@ module.exports = {
       "blue-dark-prim": "#292464",
       "purple-lite-prim": "#997AB6",
       "orange-prim": "#e67e22",
-      "grey": "#CAC0CE"
+      "grey": "#CAC0CE",
+      "dark": "#121212"
     },
     extend: {},
   },
