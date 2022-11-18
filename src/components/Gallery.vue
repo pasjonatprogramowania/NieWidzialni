@@ -1,80 +1,65 @@
+
 <template>
-  <div class="w-full rounded-3xl">
-    <h1
-      class="sm:text-4xl text-left text-5xl sm:py-20 py-20 font-bold text-white"
-    >
-      Zdjecia z projektu
+  <div>
+    <h1 class="sm:text-4xl text-left text-5xl py-10 font-bold text-white px-6">
+      Galeria
     </h1>
-    <Carousel :wrapAround="true" :breakpoints="breakpoints" :transition="500">
-      <Slide v-for="(g, i) in gallery" :key="i" slideWidth="10" class="columns">
-        <img :src="g" class="h-80 w-full object-cover" />
+    <Carousel
+      id="gallery"
+      :items-to-show="1"
+      :wrap-around="false"
+      v-model="currentSlide"
+      class="bg-blue-dark-prim w-full"
+    >
+      <Slide v-for="slide in gallery" :key="slide">
+        <img :src="slide" class="carousel__item h-80 w-full object-contain" />
       </Slide>
-      <template #addons>
-        <navigation />
-        <pagination />
-      </template>
+    </Carousel>
+
+    <Carousel
+      id="thumbnails"
+      :items-to-show="4"
+      :wrap-around="true"
+      v-model="currentSlide"
+      ref="carousel"
+    >
+      <Slide v-for="slide in gallery" :key="slide">
+        <img
+          :src="slide"
+          class="carousel__item h-20 w-full object-cover"
+          @click="slideTo(slide - 1)"
+        />
+      </Slide>
     </Carousel>
   </div>
 </template>
 
-<script setup>
-import "vue3-carousel/dist/carousel.css";
-import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
+<script>
 import i1 from "../assets/slider/1.jpg";
 import i2 from "../assets/slider/2.jpg";
 import i3 from "../assets/slider/3.jpg";
 import i4 from "../assets/slider/4.jpg";
-const gallery = [i1, i2, i3, i4];
-const breakpoints = {
-  // 700px and up
-  700: {
-    itemsToShow: 1,
+
+import { defineComponent } from "vue";
+import { Carousel, Slide, Navigation } from "vue3-carousel";
+
+import "vue3-carousel/dist/carousel.css";
+
+export default defineComponent({
+  name: "Gallery",
+  components: {
+    Carousel,
+    Slide,
+    Navigation,
   },
-  // 1024 and up
-  1024: {
-    itemsToShow: 2.5,
+  data: () => ({
+    gallery: [i1, i2, i3, i4],
+    currentSlide: 0,
+  }),
+  methods: {
+    slideTo(val) {
+      this.currentSlide = val;
+    },
   },
-};
+});
 </script>
-
-<style scoped>
-.carousel__slide {
-  padding: 5px;
-}
-
-.carousel__viewport {
-  perspective: 2000px;
-}
-
-.carousel__track {
-  transform-style: preserve-3d;
-}
-
-.carousel__slide--sliding {
-  transition: 0.5s;
-}
-
-.carousel__slide {
-  opacity: 0.9;
-  transform: rotateY(-20deg) scale(0.9);
-}
-
-.carousel__slide--active ~ .carousel__slide {
-  transform: rotateY(20deg) scale(0.9);
-}
-
-.carousel__slide--prev {
-  opacity: 1;
-  transform: rotateY(-10deg) scale(0.95);
-}
-
-.carousel__slide--next {
-  opacity: 1;
-  transform: rotateY(10deg) scale(0.95);
-}
-
-.carousel__slide--active {
-  opacity: 1;
-  transform: rotateY(0) scale(1.1);
-}
-</style>

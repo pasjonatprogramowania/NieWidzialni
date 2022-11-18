@@ -2,10 +2,11 @@
   <div class="w-full bg-purple-prim">
     <Hero class="px-6" />
     <Support class="px-6" />
-    <Content class="px-6" />
     <Slider class="px-6" />
+    <Content class="px-6" />
     <Companies class="px-6" />
-    <Gallery class="px-6 py-24" />
+    <Story class="px-6" />
+    <Gallery />
     <Footer />
   </div>
 </template>
@@ -18,6 +19,7 @@ import Content from "./components/Content.vue";
 import Gallery from "./components/Gallery.vue";
 import Companies from "./components/Companies.vue";
 import Footer from "./components/Footer.vue";
+import Story from "./components/Story.vue";
 </script>
 
 <style lang="scss" scoped>

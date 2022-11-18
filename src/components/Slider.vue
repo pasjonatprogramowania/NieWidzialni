@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full">
+  <div>
     <div>
       <h1
         class="
@@ -13,18 +13,13 @@
       >
         Widzialny zespół
       </h1>
-      <carousel :items-to-show="1" class="rounded-3xl overflow-hidden">
-        <slide
-          v-for="(slide, i) in slides"
-          :key="i"
-          slideWidth="10"
-          class="columns"
-        >
-          <div class="grid md:grid-cols-2 grid grid-cols-1 gap-20">
+      <carousel :items-to-show="1" :transition="500" style="zindex: 1000">
+        <slide v-for="(slide, i) in slides" :key="i" slideWidth="10">
+          <div class="grid md:grid-cols-2 grid-cols-1 gap-10">
             <img
               :src="slide.img"
               :alt="slide.name"
-              class="h-80 w-full object-cover rounded-3xl mr-4"
+              class="h-80 w-full object-cover"
             />
             <Card>
               <template #header>{{ slide.name }}</template>
@@ -77,5 +72,44 @@ const slides = [
 ];
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
+.carousel__slide {
+  padding: 5px;
+}
+
+.carousel__viewport {
+  perspective: 2000px;
+}
+
+.carousel__track {
+  transform-style: preserve-3d;
+}
+
+.carousel__slide--sliding {
+  transition: 0.5s;
+}
+
+.carousel__slide {
+  opacity: 0.9;
+  transform: rotateY(-20deg) scale(0.9);
+}
+
+.carousel__slide--active ~ .carousel__slide {
+  transform: rotateY(20deg) scale(0.9);
+}
+
+.carousel__slide--prev {
+  opacity: 1;
+  transform: rotateY(-10deg) scale(0.95);
+}
+
+.carousel__slide--next {
+  opacity: 1;
+  transform: rotateY(10deg) scale(0.95);
+}
+
+.carousel__slide--active {
+  opacity: 1;
+  transform: rotateY(0) scale(1.1);
+}
 </style>

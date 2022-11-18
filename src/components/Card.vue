@@ -2,7 +2,6 @@
   <div
     class="
       bg-blue-prim
-      rounded-3xl
       text-white
       p-8
       text-left
