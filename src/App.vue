@@ -2,11 +2,11 @@
   <div class="w-full bg-purple-prim">
     <Hero class="px-6" />
     <Support class="px-6" />
-    <Slider class="px-6" />
+    <Slider v-motion-fade-visible-once class="px-6" />
     <Content class="px-6" />
     <Companies class="px-6" />
     <Story class="px-6" />
-    <Gallery />
+    <Gallery v-motion-fade-visible-once />
     <Footer />
   </div>
 </template>

@@ -8,6 +8,7 @@
         class="-my-8 divide-y-2 divide-gray-100"
         v-for="(story, i) in storys"
         :key="i"
+        v-motion-slide-visible-once-left
       >
         <div class="py-8 flex flex-wrap md:flex-nowrap">
           <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
@@ -50,6 +51,36 @@
 </template>
 <script setup>
 const storys = [
+  {
+    month: "Styczen",
+    name: "lorem Ipsum",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa hic distinctio voluptas reiciendis magni quis amet perferendis? Minima, atque, eligendi maxime aliquid eum ratione sed dolore beatae cum non officiis quisquam aspernatur mollitia eveniet, animi perferendis odit omnis natus vel praesentium? Cupiditate, debitis modi rerum culpa consequuntur nam iste. Molestias, unde magni. Vel dicta hic necessitatibus",
+  },
+  {
+    month: "Styczen",
+    name: "lorem Ipsum",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa hic distinctio voluptas reiciendis magni quis amet perferendis? Minima, atque, eligendi maxime aliquid eum ratione sed dolore beatae cum non officiis quisquam aspernatur mollitia eveniet, animi perferendis odit omnis natus vel praesentium? Cupiditate, debitis modi rerum culpa consequuntur nam iste. Molestias, unde magni. Vel dicta hic necessitatibus",
+  },
+  {
+    month: "Styczen",
+    name: "lorem Ipsum",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa hic distinctio voluptas reiciendis magni quis amet perferendis? Minima, atque, eligendi maxime aliquid eum ratione sed dolore beatae cum non officiis quisquam aspernatur mollitia eveniet, animi perferendis odit omnis natus vel praesentium? Cupiditate, debitis modi rerum culpa consequuntur nam iste. Molestias, unde magni. Vel dicta hic necessitatibus",
+  },
+  {
+    month: "Styczen",
+    name: "lorem Ipsum",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa hic distinctio voluptas reiciendis magni quis amet perferendis? Minima, atque, eligendi maxime aliquid eum ratione sed dolore beatae cum non officiis quisquam aspernatur mollitia eveniet, animi perferendis odit omnis natus vel praesentium? Cupiditate, debitis modi rerum culpa consequuntur nam iste. Molestias, unde magni. Vel dicta hic necessitatibus",
+  },
+  {
+    month: "Styczen",
+    name: "lorem Ipsum",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa hic distinctio voluptas reiciendis magni quis amet perferendis? Minima, atque, eligendi maxime aliquid eum ratione sed dolore beatae cum non officiis quisquam aspernatur mollitia eveniet, animi perferendis odit omnis natus vel praesentium? Cupiditate, debitis modi rerum culpa consequuntur nam iste. Molestias, unde magni. Vel dicta hic necessitatibus",
+  },
   {
     month: "Styczen",
     name: "lorem Ipsum",

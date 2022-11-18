@@ -3,22 +3,30 @@
     Kim sa nasi partnerzy ?
   </h1>
   <div class="bg-blue-dark-prim grayscale-0 py-12">
-    <div
-      class="
-        grid grid-cols-1
-        md:grid-cols-3
-        sm:grid-cols-2
-        place-items-center
-        gap-4
-        px-6
-      "
-    >
-      <div v-for="(c, i) in companies" :key="i" class="bg-white rounded-lg p-6">
-        <center>
-          <img class="w-56 p-4" :src="c.logo" alt="" />
-        </center>
-        <h1 class="text-xl text-center">{{ c.name }}</h1>
-        <p class="text-md">{{ c.description }}</p>
+    <div>
+      <div
+        class="
+          grid grid-cols-1
+          md:grid-cols-3
+          sm:grid-cols-2
+          place-items-center
+          gap-4
+          px-6
+        "
+      >
+        <div
+          v-for="(c, i) in companies"
+          :key="i"
+          class="bg-white rounded-lg p-6"
+        >
+          <div v-motion-slide-visible-once-left>
+            <center>
+              <img class="w-56 p-4" :src="c.logo" alt="" />
+            </center>
+            <h1 class="text-xl text-center">{{ c.name }}</h1>
+            <p class="text-md">{{ c.description }}</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>

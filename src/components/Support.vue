@@ -17,7 +17,7 @@
         />
       </div>
       <div class="grid md:grid-cols-2 grid-cols-1 col-span-2 gap-4">
-        <div v-for="(val, k) in reasons" :key="k">
+        <div v-for="val in reasons" :key="val">
           <div
             class="
               bg-blue-prim
@@ -83,5 +83,4 @@ const reasons = [
 </script>
 
 <style lang="scss" scoped>
-
 </style>

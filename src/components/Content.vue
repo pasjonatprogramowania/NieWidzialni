@@ -1,13 +1,15 @@
 <template>
   <div class="grid grid-cols-1 sm:grid-cols-2 py-10 gap-8">
     <div v-for="(c, i) in content" :key="i">
-      <h1 class="sm:text-4xl text-left text-5xl py-10 font-bold text-white">
-        {{ c.name }}
-      </h1>
+      <div v-motion-slide-visible-once-left>
+        <h1 class="sm:text-4xl text-left text-5xl py-10 font-bold text-white">
+          {{ c.name }}
+        </h1>
 
-      <p class="text-lg py-4">
-        {{ c.description }}
-      </p>
+        <p class="text-lg py-4">
+          {{ c.description }}
+        </p>
+      </div>
     </div>
   </div>
 </template>
