@@ -60,7 +60,7 @@
                     hover:bg-blue-dark-prim hover:ring-purple-dark-prim
                   "
                 >
-                  Get started
+                  
                   <span class="text-indigo-200" aria-hidden="true">&rarr;</span>
                 </a>
                 <a

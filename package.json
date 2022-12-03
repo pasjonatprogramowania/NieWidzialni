@@ -12,6 +12,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
     "@vueuse/core": "^9.5.0",
     "@vueuse/motion": "^2.0.0-beta.12",
+    "vite-plugin-require": "^1.1.10",
     "vue": "^3.2.41",
     "vue3-carousel": "^0.2.5",
     "vue3-icon": "^2.1.0",

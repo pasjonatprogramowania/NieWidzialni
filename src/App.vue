@@ -1,25 +1,26 @@
 <template>
   <div class="w-full bg-purple-prim">
-    <Hero class="px-6" />
+    <HeroTop class="px-6" />
     <Support class="px-6" />
-    <Slider v-motion-fade-visible-once class="px-6" />
-    <Content class="px-6" />
-    <Companies class="px-6" />
-    <Story class="px-6" />
+    <Team class="px-6" />
+    <AboutProject class="px-6" />
     <Gallery v-motion-fade-visible-once />
+    <Companies class="px-6" />
+    <ProjectStory class="px-6" />
     <Footer />
   </div>
 </template>
 
 <script setup>
-import Hero from "./components/Hero.vue";
-import Support from "./components/Support.vue";
-import Slider from "./components/Slider.vue";
-import Content from "./components/Content.vue";
+import HeroTop from "./components/HeroTop.vue";
+import Support from "./components/ReasonsToSupport.vue";
+import Team from "./components/Team.vue";
+import AboutProject from "./components/AboutProject.vue";
 import Gallery from "./components/Gallery.vue";
 import Companies from "./components/Companies.vue";
 import Footer from "./components/Footer.vue";
-import Story from "./components/Story.vue";
+import ProjectStory from "./components/ProjectStory.vue";
+//v-motion-fade-visible-once
 </script>
 
 <style lang="scss" scoped>

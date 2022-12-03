@@ -13,15 +13,15 @@
       >
         Widzialny zespół
       </h1>
-      <carousel :items-to-show="1" :transition="500" style="zindex: 1000">
-        <slide v-for="(slide, i) in slides" :key="i" slideWidth="10">
-          <div class="grid md:grid-cols-2 grid-cols-1 gap-10">
+      <carousel :transition="500" :breakpoints="breakpoints" :wrapAround="true">
+        <slide v-for="(slide, i) in slides" :key="i">
+          <div class="grid grid-cols-1 gap-5 p-12 carousel__item">
             <img
               :src="slide.img"
               :alt="slide.name"
-              class="h-80 w-full object-cover"
+              class="h-80 w-full object-cover rounded-lg"
             />
-            <Card>
+            <Card class="rounded-lg">
               <template #header>{{ slide.name }}</template>
               <template #description>{{ slide.description }}</template>
             </Card>
@@ -37,9 +37,24 @@
 </template>
 
 <script setup>
+const breakpoints = {
+  700: {
+    itemsToShow: 1,
+    snapAlign: "center",
+  },
+  // 1024 and up
+  1024: {
+    itemsToShow: 2,
+    snapAlign: "start",
+  },
+  1400: {
+    itemsToShow: 3,
+    snapAlign: "start",
+  },
+};
 import Card from "./Card.vue";
-import "vue3-carousel/dist/carousel.css";
 import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
+import "vue3-carousel/dist/carousel.css";
 import i1 from "../assets/slider/1.jpg";
 import i2 from "../assets/slider/2.jpg";
 import i3 from "../assets/slider/3.jpg";
@@ -93,11 +108,6 @@ const slides = [
   opacity: 0.9;
   transform: rotateY(-20deg) scale(0.9);
 }
-
-.carousel__slide--active ~ .carousel__slide {
-  transform: rotateY(20deg) scale(0.9);
-}
-
 .carousel__slide--prev {
   opacity: 1;
   transform: rotateY(-10deg) scale(0.95);
@@ -105,11 +115,14 @@ const slides = [
 
 .carousel__slide--next {
   opacity: 1;
-  transform: rotateY(10deg) scale(0.95);
+  transform: rotateY(0) scale(1.1);
+}
+.carousel__slide--next ~ .carousel__slide {
+  transform: rotateY(20deg) scale(0.9);
 }
 
 .carousel__slide--active {
   opacity: 1;
-  transform: rotateY(0) scale(1.1);
+  transform: rotateY(10deg) scale(0.95);
 }
 </style>
