@@ -88,41 +88,43 @@ const slides = [
 </script>
 
 <style scoped>
-.carousel__slide {
-  padding: 5px;
-}
+@media screen and (min-width: 1400px) {
+  .carousel__slide {
+    padding: 5px;
+  }
 
-.carousel__viewport {
-  perspective: 2000px;
-}
+  .carousel__viewport {
+    perspective: 2000px;
+  }
 
-.carousel__track {
-  transform-style: preserve-3d;
-}
+  .carousel__track {
+    transform-style: preserve-3d;
+  }
 
-.carousel__slide--sliding {
-  transition: 0.5s;
-}
+  .carousel__slide--sliding {
+    transition: 0.5s;
+  }
 
-.carousel__slide {
-  opacity: 0.9;
-  transform: rotateY(-20deg) scale(0.9);
-}
-.carousel__slide--prev {
-  opacity: 1;
-  transform: rotateY(-10deg) scale(0.95);
-}
+  .carousel__slide {
+    opacity: 0.9;
+    transform: rotateY(-20deg) scale(0.9);
+  }
+  .carousel__slide--prev {
+    opacity: 1;
+    transform: rotateY(-10deg) scale(0.95);
+  }
 
-.carousel__slide--next {
-  opacity: 1;
-  transform: rotateY(0) scale(1.1);
-}
-.carousel__slide--next ~ .carousel__slide {
-  transform: rotateY(20deg) scale(0.9);
-}
+  .carousel__slide--next {
+    opacity: 1;
+    transform: rotateY(0) scale(1.1);
+  }
+  .carousel__slide--next ~ .carousel__slide {
+    transform: rotateY(20deg) scale(0.9);
+  }
 
-.carousel__slide--active {
-  opacity: 1;
-  transform: rotateY(10deg) scale(0.95);
+  .carousel__slide--active {
+    opacity: 1;
+    transform: rotateY(10deg) scale(0.95);
+  }
 }
 </style>
