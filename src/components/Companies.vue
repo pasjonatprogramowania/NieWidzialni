@@ -17,14 +17,16 @@
         <div
           v-for="(c, i) in companies"
           :key="i"
-          class="bg-white rounded-lg p-6"
+          class="bg-white rounded-lg p-6 h-96 grid place-items-center"
         >
           <div v-motion-slide-visible-once-left>
-            <center>
-              <img class="w-56 p-4" :src="c.logo" alt="" />
-            </center>
-            <h1 class="text-xl text-center">{{ c.name }}</h1>
-            <p class="text-md">{{ c.description }}</p>
+            <div>
+              <center>
+                <img class="w-56 p-4" :src="c.logo" alt="" />
+              </center>
+              <h1 class="text-xl text-center">{{ c.name }}</h1>
+              <p class="text-md">{{ c.description }}</p>
+            </div>
           </div>
         </div>
       </div>
@@ -34,6 +36,7 @@
 
 <script setup>
 import zhp from "../assets/companies/zhp.png";
+import vilo from "../assets/companies/vilo.png";
 const companies = [
   {
     logo: zhp,
@@ -42,8 +45,8 @@ const companies = [
       "quod rem? Excepturi a officiis incidunt? Ratione quidem optio a excepturi in natus ea autem, earum dignissimos, eius asperiores architecto possimus.",
   },
   {
-    logo: zhp,
-    name: "zhp",
+    logo: vilo,
+    name: "Samorząd Kochanowskiego",
     description:
       "quod rem? Excepturi a officiis incidunt? Ratione quidem optio a excepturi in natus ea autem, earum dignissimos, eius asperiores architecto possimus.",
   },

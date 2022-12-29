@@ -15,7 +15,7 @@
       </h1>
       <carousel :transition="500" :breakpoints="breakpoints" :wrapAround="true">
         <slide v-for="(slide, i) in slides" :key="i">
-          <div class="grid grid-cols-1 gap-5 p-12 carousel__item">
+          <div class="grid grid-cols-1 gap-5 sm:p-2 carousel__item">
             <img
               :src="slide.img"
               :alt="slide.name"
@@ -37,6 +37,18 @@
 </template>
 
 <script setup>
+import Card from "./Card.vue";
+import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
+import "vue3-carousel/dist/carousel.css";
+import i1 from "../assets/slider/1.jpg";
+import i2 from "../assets/slider/2.jpg";
+import i3 from "../assets/slider/3.jpg";
+import i4 from "../assets/slider/4.jpg";
+import i5 from "../assets/slider/5.jpg";
+import i6 from "../assets/slider/6.jpg";
+import i7 from "../assets/slider/7.jpg";
+import i8 from "../assets/slider/8.jpg";
+import i9 from "../assets/slider/9.jpg";
 const breakpoints = {
   700: {
     itemsToShow: 1,
@@ -52,35 +64,57 @@ const breakpoints = {
     snapAlign: "start",
   },
 };
-import Card from "./Card.vue";
-import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
-import "vue3-carousel/dist/carousel.css";
-import i1 from "../assets/slider/1.jpg";
-import i2 from "../assets/slider/2.jpg";
-import i3 from "../assets/slider/3.jpg";
-import i4 from "../assets/slider/4.jpg";
 const slides = [
   {
     img: i1,
-    name: "siema",
-    description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet perspiciatis vel cumque eligendi numquam hic modi, facilis aliquam omnis ratione, fugit quam, id illum cum aspernatur deleniti? Sint, voluptate quas!",
+    name: "Martyna Muc",
+    description: "",
   },
   {
     img: i2,
-    name: "siema",
+    name: "Wiktoria Peryt",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet perspiciatis vel cumque eligendi numquam hic modi, facilis aliquam omnis ratione, fugit quam, id illum cum aspernatur deleniti? Sint, voluptate quas!",
   },
   {
     img: i3,
-    name: "siema",
+    name: "Kornelia Zgorzelak",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet perspiciatis vel cumque eligendi numquam hic modi, facilis aliquam omnis ratione, fugit quam, id illum cum aspernatur deleniti? Sint, voluptate quas!",
   },
   {
     img: i4,
-    name: "siema",
+    name: "Livia Purgał",
+    description:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet perspiciatis vel cumque eligendi numquam hic modi, facilis aliquam omnis ratione, fugit quam, id illum cum aspernatur deleniti? Sint, voluptate quas!",
+  },
+  {
+    img: i5,
+    name: "Lena Duszyk",
+    description:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet perspiciatis vel cumque eligendi numquam hic modi, facilis aliquam omnis ratione, fugit quam, id illum cum aspernatur deleniti? Sint, voluptate quas!",
+  },
+  {
+    img: i6,
+    name: "Paweł Szewczyk",
+    description:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet perspiciatis vel cumque eligendi numquam hic modi, facilis aliquam omnis ratione, fugit quam, id illum cum aspernatur deleniti? Sint, voluptate quas!",
+  },
+  {
+    img: i7,
+    name: "Sylwia Nachyła",
+    description:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet perspiciatis vel cumque eligendi numquam hic modi, facilis aliquam omnis ratione, fugit quam, id illum cum aspernatur deleniti? Sint, voluptate quas!",
+  },
+  {
+    img: i8,
+    name: "Laura Moniakowska",
+    description:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet perspiciatis vel cumque eligendi numquam hic modi, facilis aliquam omnis ratione, fugit quam, id illum cum aspernatur deleniti? Sint, voluptate quas!",
+  },
+  {
+    img: i9,
+    name: "Wiktoria Lożyńska",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet perspiciatis vel cumque eligendi numquam hic modi, facilis aliquam omnis ratione, fugit quam, id illum cum aspernatur deleniti? Sint, voluptate quas!",
   },
