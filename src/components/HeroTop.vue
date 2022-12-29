@@ -38,9 +38,7 @@
                 i nasze problemy
               </h1>
               <p class="mt-6 text-lg leading-8 text-gray-600 sm:text-center">
-                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-                lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-                fugiat aliqua.
+                Razem dla zdrowia psychicznego młodzieży
               </p>
               <div class="mt-8 flex gap-x-4 sm:justify-center">
                 <a
@@ -60,8 +58,9 @@
                     hover:bg-blue-dark-prim hover:ring-purple-dark-prim
                   "
                 >
-                  
-                  <span class="text-indigo-200" aria-hidden="true">&rarr;</span>
+                  <span class="text-indigo-200" aria-hidden="true"
+                    >W jednym wideo &rarr;</span
+                  >
                 </a>
                 <a
                   href="#"
@@ -79,7 +78,7 @@
                     hover:ring-purple-dark-prim hover:bg-grey
                   "
                 >
-                  Live demo
+                  Zobacz więcej
                   <span class="text-gray-400" aria-hidden="true">&rarr;</span>
                 </a>
               </div>
