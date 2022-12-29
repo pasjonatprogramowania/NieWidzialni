@@ -5,8 +5,8 @@
     <Team class="px-6" />
     <AboutProject class="px-6" />
     <Gallery v-motion-fade-visible-once />
-    <Companies class="px-6" />
-    <ProjectStory class="px-6" />
+    <!-- <Companies class="px-6" /> -->
+    <!-- <ProjectStory class="px-6" /> -->
     <Footer />
   </div>
 </template>

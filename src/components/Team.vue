@@ -68,55 +68,56 @@ const slides = [
   {
     img: i1,
     name: "Martyna Muc",
-    description: "",
+    description:
+      "Na tygodniu uczennica VI LO, profilu humanistycznego. Interesuję się wszystkim, co związane z moim profilem: kulturą, muzyką, a przede wszystkim teatrem. Kolejną z moich pasji są języki obce. W projekcie pełnię wiele ról, jednak jedną z ważniejszych jest prowadzenie social mediów, a konkretnie TikToka.",
   },
   {
     img: i2,
     name: "Wiktoria Peryt",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet perspiciatis vel cumque eligendi numquam hic modi, facilis aliquam omnis ratione, fugit quam, id illum cum aspernatur deleniti? Sint, voluptate quas!",
+      "Jak na uczennicę ZSP przystało, interesuję się szeroko pojętą sztuką, w szczególności rzeźbienia oraz tatuażu. W zespole pełnię rolę grafika: posty, relacje, plakaty, ulotki; razem z Sylwią dbamy o to, żeby wszystko było jednocześnie dopracowane nie tylko merytorycznie, ale i estetycznie.",
   },
   {
     img: i3,
     name: "Kornelia Zgorzelak",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet perspiciatis vel cumque eligendi numquam hic modi, facilis aliquam omnis ratione, fugit quam, id illum cum aspernatur deleniti? Sint, voluptate quas!",
+      "Za dnia uczennica profilu biochemicznego z rozszerzoną matematyką, zaś w czasie wolnym pracuję oraz pomagam w schronisku. Jedną z moich ogromnych pasji na zawsze pozostanie gimnastyka. W projekcie zajmuję się researchem, kontaktem z instytucjami oraz prowadzeniem TikToka.",
   },
   {
     img: i4,
     name: "Livia Purgał",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet perspiciatis vel cumque eligendi numquam hic modi, facilis aliquam omnis ratione, fugit quam, id illum cum aspernatur deleniti? Sint, voluptate quas!",
+      "W projekcie jestem odpowiedzialna za podtrzymywanie ducha: jeśli reszta ma załamanie nerwowe przez ogrom naszego przedsięwzięcia i z ich oczu leci wodospad łez, robię memy. W wolnym czasie (którego nie ma) szydełkuję i rysuję.",
   },
   {
     img: i5,
     name: "Lena Duszyk",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet perspiciatis vel cumque eligendi numquam hic modi, facilis aliquam omnis ratione, fugit quam, id illum cum aspernatur deleniti? Sint, voluptate quas!",
+      "Hej, jestem liderką projektu. Zajmuję się niedociągnięciami, kontaktem z instytucjami i partnerami, pilnuję terminów i dbam, żeby wszystko miało ręce i nogi. Innymi słowy, odwalam spory kawał czarnej roboty.",
   },
   {
     img: i6,
     name: "Paweł Szewczyk",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet perspiciatis vel cumque eligendi numquam hic modi, facilis aliquam omnis ratione, fugit quam, id illum cum aspernatur deleniti? Sint, voluptate quas!",
+      "Jedyny student i chłopak w zespole. Na codzień jestem uczniem WATu, w chwili wolnej działam nad stroną projektu zmieniając design czy dodając nowe opcje, jak na matematycznego i informatycznego świra przystało.",
   },
   {
     img: i7,
     name: "Sylwia Nachyła",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet perspiciatis vel cumque eligendi numquam hic modi, facilis aliquam omnis ratione, fugit quam, id illum cum aspernatur deleniti? Sint, voluptate quas!",
+      "Kolejna uczennica ZSP, oprócz tego profesjonalna harcerka. Pasjonuję się grafiką; wygląd social mediów, posty, tła relacji czy kolarze, a nawet logo: razem z Wiktorią każdego dnia staramy się nadać projektowi więcej profesjonalizmu i unikalnego wyglądu.",
   },
   {
     img: i8,
     name: "Laura Moniakowska",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet perspiciatis vel cumque eligendi numquam hic modi, facilis aliquam omnis ratione, fugit quam, id illum cum aspernatur deleniti? Sint, voluptate quas!",
+      "Kolejny przypadek, kiedy liczba zainteresowań przekracza zdecydowanie ilość wolnego czasu. Piszę wiersze, opowiadania, a także hobbystycznie zajmuję się grafiką. Oprócz tego uwielbiam jeździć na nartach oraz grać w tenisa. W projekcie zajmuję się researchem, social mediami, a także pomagam przy grafice.",
   },
   {
     img: i9,
     name: "Wiktoria Lożyńska",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet perspiciatis vel cumque eligendi numquam hic modi, facilis aliquam omnis ratione, fugit quam, id illum cum aspernatur deleniti? Sint, voluptate quas!",
+      "Na codzień uczennica na profilu matematyczno-informatycznym, jednak w chwili wolnej chętnie zajmuję się swoimi zainteresowaniami, których jest więcej niż mogłabym zliczyć. Poezja, pisanie, kryminologia, a nawet gra w tenisa; a także wiele, wiele innych. W projekcie natomiast zajmuję się researchem.",
   },
 ];
 </script>
