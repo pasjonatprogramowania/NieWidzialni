@@ -59,7 +59,7 @@
                   "
                 >
                   <span class="text-indigo-200" aria-hidden="true"
-                    >O nas &rarr;</span
+                    >Zobacz Wideo &rarr;</span
                   >
                 </a>
                 <a
@@ -78,7 +78,7 @@
                     hover:ring-purple-dark-prim hover:bg-grey
                   "
                 >
-                  Więcej
+                  Więcej o nas
                 </a>
               </div>
             </div>

@@ -2,7 +2,7 @@
   <div class="grid grid-cols-1 sm:grid-cols-2 py-10 gap-8">
     <div v-for="(c, i) in content" :key="i">
       <div v-motion-slide-visible-once-left>
-        <h1 class="sm:text-2xl text-left text-3xl font-bold text-white">
+        <h1 class="sm:text-3xl text-4xl text-left font-bold text-white">
           {{ c.name }}
         </h1>
 

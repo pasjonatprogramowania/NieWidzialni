@@ -1,18 +1,18 @@
 <template>
   <div class="w-full bg-purple-prim">
     <HeroTop class="px-6" />
-    <Support class="px-6" />
+    <Goals class="px-6" />
     <Team class="px-6" />
     <AboutProject class="px-6" />
+    <Companies class="px-6" />
+    <ProjectStory class="px-6" />
     <Gallery v-motion-fade-visible-once />
-    <!-- <Companies class="px-6" /> -->
-    <!-- <ProjectStory class="px-6" /> -->
   </div>
 </template>
 
 <script setup>
 import HeroTop from "./components/HeroTop.vue";
-import Support from "./components/ReasonsToSupport.vue";
+import Goals from "./components/Goals.vue";
 import Team from "./components/Team.vue";
 import AboutProject from "./components/AboutProject.vue";
 import Gallery from "./components/Gallery.vue";

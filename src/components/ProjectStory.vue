@@ -1,101 +1,59 @@
 <template>
-  <section class="text-gray-600 body-font overflow-hidden">
-    <h1 class="sm:text-4xl text-left text-5xl py-10 font-bold text-white">
-      Historia projektu
+  <div>
+    <h1 class="px-6 sm:text-3xl text-4xl text-left py-10 font-bold text-white">
+      Historia Projektu
     </h1>
-    <div class="flex px-5 py-2">
-      <div class="justify-center">
-        <div
-          class="-my-8 divide-y-2 divide-gray-100"
-          v-for="(story, i) in storys"
-          :key="i"
-          v-motion-slide-visible-once-left
-        >
-          <div class="py-8 flex flex-wrap md:flex-nowrap">
-            <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-              <span class="font-semibold title-font text-gray-700">{{
-                story.month
-              }}</span>
-            </div>
-            <div class="md:flex-grow">
-              <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">
-                {{ story.name }}
-              </h2>
-              <p class="leading-relaxed">
-                {{ story.description }}
-              </p>
-              <a
-                href="#"
-                class="
-                  my-2
-                  inline-block
-                  rounded-lg
-                  px-4
-                  py-1.5
-                  text-bold
-                  font-semibold
-                  leading-7
-                  text-gray-900
-                  bg-white
-                  ring-1 ring-purple-dark-prim
-                  hover:ring-purple-dark-prim hover:bg-grey
-                "
-                >Post
-                <span class="text-gray-400" aria-hidden="true">&rarr;</span>
-              </a>
-            </div>
-          </div>
+    <div class="flex flex-wrap">
+      <div
+        v-for="(item, index) in items"
+        :key="item"
+        :class="`sm:w-1/2 w-full sm:text-left text-center${
+          index % 2 === 0 ? 'justify-end' : 'justify-start sm:pt-96'
+        } sm:flex-col`"
+      >
+        <div v-motion-slide-visible-once-left>
+          <h1 class="text-4xl text-center font-bold text-white py-10">
+            {{ item.header }}
+          </h1>
+          <p class="text-xl mb-4 text-black">{{ item.description }}</p>
+          <img :src="item.src" alt="Image" class="mx-auto mb-4 w-52 my-12" />
         </div>
       </div>
     </div>
-  </section>
+  </div>
 </template>
-<script setup>
-const storys = [
-  {
-    month: "Styczen",
-    name: "lorem Ipsum",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa hic distinctio voluptas reiciendis magni quis amet perferendis? Minima, atque, eligendi maxime aliquid eum ratione sed dolore beatae cum non officiis quisquam aspernatur mollitia eveniet, animi perferendis odit omnis natus vel praesentium? Cupiditate, debitis modi rerum culpa consequuntur nam iste. Molestias, unde magni. Vel dicta hic necessitatibus",
-  },
-  {
-    month: "Styczen",
-    name: "lorem Ipsum",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa hic distinctio voluptas reiciendis magni quis amet perferendis? Minima, atque, eligendi maxime aliquid eum ratione sed dolore beatae cum non officiis quisquam aspernatur mollitia eveniet, animi perferendis odit omnis natus vel praesentium? Cupiditate, debitis modi rerum culpa consequuntur nam iste. Molestias, unde magni. Vel dicta hic necessitatibus",
-  },
-  {
-    month: "Styczen",
-    name: "lorem Ipsum",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa hic distinctio voluptas reiciendis magni quis amet perferendis? Minima, atque, eligendi maxime aliquid eum ratione sed dolore beatae cum non officiis quisquam aspernatur mollitia eveniet, animi perferendis odit omnis natus vel praesentium? Cupiditate, debitis modi rerum culpa consequuntur nam iste. Molestias, unde magni. Vel dicta hic necessitatibus",
-  },
-  {
-    month: "Styczen",
-    name: "lorem Ipsum",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa hic distinctio voluptas reiciendis magni quis amet perferendis? Minima, atque, eligendi maxime aliquid eum ratione sed dolore beatae cum non officiis quisquam aspernatur mollitia eveniet, animi perferendis odit omnis natus vel praesentium? Cupiditate, debitis modi rerum culpa consequuntur nam iste. Molestias, unde magni. Vel dicta hic necessitatibus",
-  },
-  {
-    month: "Styczen",
-    name: "lorem Ipsum",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa hic distinctio voluptas reiciendis magni quis amet perferendis? Minima, atque, eligendi maxime aliquid eum ratione sed dolore beatae cum non officiis quisquam aspernatur mollitia eveniet, animi perferendis odit omnis natus vel praesentium? Cupiditate, debitis modi rerum culpa consequuntur nam iste. Molestias, unde magni. Vel dicta hic necessitatibus",
-  },
-  {
-    month: "Styczen",
-    name: "lorem Ipsum",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa hic distinctio voluptas reiciendis magni quis amet perferendis? Minima, atque, eligendi maxime aliquid eum ratione sed dolore beatae cum non officiis quisquam aspernatur mollitia eveniet, animi perferendis odit omnis natus vel praesentium? Cupiditate, debitis modi rerum culpa consequuntur nam iste. Molestias, unde magni. Vel dicta hic necessitatibus",
-  },
-  {
-    month: "Styczen",
-    name: "lorem Ipsum",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa hic distinctio voluptas reiciendis magni quis amet perferendis? Minima, atque, eligendi maxime aliquid eum ratione sed dolore beatae cum non officiis quisquam aspernatur mollitia eveniet, animi perferendis odit omnis natus vel praesentium? Cupiditate, debitis modi rerum culpa consequuntur nam iste. Molestias, unde magni. Vel dicta hic necessitatibus",
-  },
-];
-</script>
 
-<style lang="scss" scoped>
-</style>
+<script>
+export default {
+  data() {
+    return {
+      items: [
+        {
+          header: "Lena napisz cos tu",
+          description:
+            " Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis corporis repudiandae necessitatibus. Eveniet omnis praesentium libero nisi provident doloribus magni! Minima enim accusamus repellat dolor nam quisquam quidem, recusandae provident optio, vitae ipsa voluptate quae fugiat, fuga deleniti suscipit dolores! Nulla optio nostrum ipsa distinctio adipisci magni laboriosam provident cumque praesentium tempora amet, cum, eligendi voluptate fugiat accusamus! Perspiciatis provident nobis dolore eaque, dignissimos necessitatibus.",
+          src: "bg/r-arr.png",
+        },
+        {
+          header: "elo",
+          description:
+            " Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis corporis repudiandae necessitatibus. Eveniet omnis praesentium libero nisi provident doloribus magni! Minima enim accusamus repellat dolor nam quisquam quidem, recusandae provident optio, vitae ipsa voluptate quae fugiat, fuga deleniti suscipit dolores! Nulla optio nostrum ipsa distinctio adipisci magni laboriosam provident cumque praesentium tempora amet, cum, eligendi voluptate fugiat accusamus! Perspiciatis provident nobis dolore eaque, dignissimos necessitatibus.",
+          src: "bg/l-arr.png",
+        },
+        {
+          header: "elo",
+          description:
+            " Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis corporis repudiandae necessitatibus. Eveniet omnis praesentium libero nisi provident doloribus magni! Minima enim accusamus repellat dolor nam quisquam quidem, recusandae provident optio, vitae ipsa voluptate quae fugiat, fuga deleniti suscipit dolores! Nulla optio nostrum ipsa distinctio adipisci magni laboriosam provident cumque praesentium tempora amet, cum, eligendi voluptate fugiat accusamus! Perspiciatis provident nobis dolore eaque, dignissimos necessitatibus.",
+          src: "bg/r-arr.png",
+        },
+        {
+          header: "elo",
+          description:
+            " Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis corporis repudiandae necessitatibus. Eveniet omnis praesentium libero nisi provident doloribus magni! Minima enim accusamus repellat dolor nam quisquam quidem, recusandae provident optio, vitae ipsa voluptate quae fugiat, fuga deleniti suscipit dolores! Nulla optio nostrum ipsa distinctio adipisci magni laboriosam provident cumque praesentium tempora amet, cum, eligendi voluptate fugiat accusamus! Perspiciatis provident nobis dolore eaque, dignissimos necessitatibus.",
+          src: "bg/l-arr.png",
+        },
+      ],
+    };
+  },
+};
+</script>

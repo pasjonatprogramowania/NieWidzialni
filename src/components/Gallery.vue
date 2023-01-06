@@ -1,7 +1,7 @@
 
 <template>
   <div>
-    <h1 class="sm:text-2xl text-left text-3xl py-10 font-bold text-white px-6">
+    <h1 class="sm:text-3xl text-left text-xl py-10 font-bold text-white px-6">
       Galeria
     </h1>
     <Carousel
@@ -25,26 +25,6 @@
 import { defineComponent } from "vue";
 import { Carousel, Slide, Navigation } from "vue3-carousel";
 import "vue3-carousel/dist/carousel.css";
-import g1 from "../assets/gallery/gallery_1.png";
-import g2 from "../assets/gallery/gallery_2.png";
-import g3 from "../assets/gallery/gallery_3.png";
-import g4 from "../assets/gallery/gallery_4.png";
-import g5 from "../assets/gallery/gallery_5.png";
-import g6 from "../assets/gallery/gallery_6.png";
-import g7 from "../assets/gallery/gallery_7.png";
-import g8 from "../assets/gallery/gallery_8.png";
-import g9 from "../assets/gallery/gallery_9.png";
-import g10 from "../assets/gallery/gallery_10.png";
-import g11 from "../assets/gallery/gallery_11.png";
-import g12 from "../assets/gallery/gallery_12.png";
-import g13 from "../assets/gallery/gallery_13.png";
-import g14 from "../assets/gallery/gallery_14.png";
-import g15 from "../assets/gallery/gallery_15.png";
-import g16 from "../assets/gallery/gallery_16.png";
-import g17 from "../assets/gallery/gallery_17.png";
-import g18 from "../assets/gallery/gallery_18.png";
-import g19 from "../assets/gallery/gallery_19.png";
-import g20 from "../assets/gallery/gallery_20.png";
 export default defineComponent({
   name: "Gallery",
   components: {
@@ -67,26 +47,26 @@ export default defineComponent({
         },
       },
       gallery: [
-        g1,
-        g2,
-        g3,
-        g4,
-        g5,
-        g6,
-        g7,
-        g8,
-        g9,
-        g10,
-        g11,
-        g12,
-        g13,
-        g14,
-        g15,
-        g16,
-        g17,
-        g18,
-        g19,
-        g20,
+        "/gallery/gallery_1.png",
+        "/gallery/gallery_2.png",
+        "/gallery/gallery_3.png",
+        "/gallery/gallery_4.png",
+        "/gallery/gallery_5.png",
+        "/gallery/gallery_6.png",
+        "/gallery/gallery_7.png",
+        "/gallery/gallery_8.png",
+        "/gallery/gallery_9.png",
+        "/gallery/gallery_10.png",
+        "/gallery/gallery_11.png",
+        "/gallery/gallery_12.png",
+        "/gallery/gallery_13.png",
+        "/gallery/gallery_14.png",
+        "/gallery/gallery_15.png",
+        "/gallery/gallery_16.png",
+        "/gallery/gallery_17.png",
+        "/gallery/gallery_18.png",
+        "/gallery/gallery_19.png",
+        "/gallery/gallery_20.png",
       ],
       currentSlide: 0,
     };

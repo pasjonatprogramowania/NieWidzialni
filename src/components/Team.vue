@@ -3,8 +3,8 @@
     <div>
       <h1
         class="
-          sm:text-2xl
-          text-left text-3xl
+          sm:text-3xl
+          text-4xl text-left
           sm:py-20
           py-20
           font-bold
@@ -40,15 +40,6 @@
 import Card from "./Card.vue";
 import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
 import "vue3-carousel/dist/carousel.css";
-import i1 from "../assets/slider/1.jpg";
-import i2 from "../assets/slider/2.jpg";
-import i3 from "../assets/slider/3.jpg";
-import i4 from "../assets/slider/4.jpg";
-import i5 from "../assets/slider/5.jpg";
-import i6 from "../assets/slider/6.jpg";
-import i7 from "../assets/slider/7.jpg";
-import i8 from "../assets/slider/8.jpg";
-import i9 from "../assets/slider/9.jpg";
 const breakpoints = {
   700: {
     itemsToShow: 1,
@@ -66,55 +57,55 @@ const breakpoints = {
 };
 const slides = [
   {
-    img: i1,
+    img: "slider/1.jpg",
     name: "Martyna Muc",
     description:
       "W projekcie pełnię wiele ról, jednak jedną z ważniejszych jest prowadzenie social mediów, a konkretnie TikToka.",
   },
   {
-    img: i2,
+    img: "slider/2.jpg",
     name: "Wiktoria Peryt",
     description:
       "Razem z Sylwią dbamy o to, żeby wszystko było jednocześnie dopracowane nie tylko merytorycznie, ale i estetycznie.",
   },
   {
-    img: i3,
+    img: "slider/3.jpg",
     name: "Kornelia Zgorzelak",
     description:
       "W czasie wolnym pracuję oraz pomagam w schronisku. W projekcie zajmuję się researchem, kontaktem z instytucjami oraz prowadzeniem TikToka.",
   },
   {
-    img: i4,
+    img: "slider/4.jpg",
     name: "Livia Purgał",
     description:
       "W projekcie jestem odpowiedzialna za podtrzymywanie ducha: robię memy na social media. W wolnym czasie (którego nie ma) szydełkuję i rysuję.",
   },
   {
-    img: i5,
+    img: "slider/5.jpg",
     name: "Lena Duszyk",
     description:
       "Hej, jestem liderką projektu. Zajmuję się niedociągnięciami, kontaktem z instytucjami i partnerami, pilnuję terminów",
   },
   {
-    img: i6,
+    img: "slider/6.jpg",
     name: "Paweł Szewczyk",
     description:
       "W chwili wolnej działam nad stroną projektu zmieniając design czy dodając nowe opcje, jak na matematycznego i informatycznego świra przystało.",
   },
   {
-    img: i7,
+    img: "slider/7.jpg",
     name: "Sylwia Nachyła",
     description:
       "Wygląd social mediów, posty, tła relacji czy kolarze, a nawet logo: razem z Wiktorią każdego dnia staramy się nadać projektowi więcej profesjonalizmu",
   },
   {
-    img: i8,
+    img: "slider/8.jpg",
     name: "Laura Moniakowska",
     description:
       "Uwielbiam jeździć na nartach oraz grać w tenisa. W projekcie zajmuję się researchem, social mediami, a także pomagam przy grafice.",
   },
   {
-    img: i9,
+    img: "slider/9.jpg",
     name: "Wiktoria Lożyńska",
     description:
       "W chwili wolnej chętnie zajmuję się swoimi zainteresowaniami. Poezja, gra w tenisa. W projekcie zajmuję się researchem.",
