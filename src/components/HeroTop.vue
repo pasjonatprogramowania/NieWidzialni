@@ -1,6 +1,6 @@
 <!-- This example requires Tailwind CSS v3.0+ -->
 <template>
-  <div class="isolate w-full bg-purple-prim">
+  <div class="bg-purple-prim grid place-items-center">
     <main>
       <div class="relative lg:px-8">
         <div class="mx-auto max-w-3xl pt-10 pb-32 sm:pt-20 sm:pb-40">
@@ -59,7 +59,7 @@
                   "
                 >
                   <span class="text-indigo-200" aria-hidden="true"
-                    >W jednym wideo &rarr;</span
+                    >O nas &rarr;</span
                   >
                 </a>
                 <a
@@ -78,8 +78,7 @@
                     hover:ring-purple-dark-prim hover:bg-grey
                   "
                 >
-                  Zobacz więcej
-                  <span class="text-gray-400" aria-hidden="true">&rarr;</span>
+                  Więcej
                 </a>
               </div>
             </div>

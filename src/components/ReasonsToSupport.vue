@@ -7,7 +7,7 @@
     />
     <div class="grid md:grid-cols-3 grid-cols-1 gap-4">
       <div>
-        <h1 class="text-left text-4xl sm:py-20 py-20 font-bold text-white">
+        <h1 class="text-left text-3xl sm:py-20 font-bold text-white">
           Dlaczego warto wesprzec nasz projekt ?
         </h1>
         <img

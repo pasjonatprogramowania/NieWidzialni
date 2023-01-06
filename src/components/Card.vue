@@ -8,6 +8,9 @@
       shadow-md
       overflow-hidden
       relative
+      h-60
+      sm:h-auto
+      w-80
     "
   >
     <h1 class="my-2 text-2xl"><slot name="header" /></h1>

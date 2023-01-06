@@ -1,7 +1,7 @@
 
 <template>
   <div>
-    <h1 class="sm:text-4xl text-left text-5xl py-10 font-bold text-white px-6">
+    <h1 class="sm:text-2xl text-left text-3xl py-10 font-bold text-white px-6">
       Galeria
     </h1>
     <Carousel

@@ -7,7 +7,6 @@
     <Gallery v-motion-fade-visible-once />
     <!-- <Companies class="px-6" /> -->
     <!-- <ProjectStory class="px-6" /> -->
-    <Footer />
   </div>
 </template>
 
@@ -18,7 +17,6 @@ import Team from "./components/Team.vue";
 import AboutProject from "./components/AboutProject.vue";
 import Gallery from "./components/Gallery.vue";
 import Companies from "./components/Companies.vue";
-import Footer from "./components/Footer.vue";
 import ProjectStory from "./components/ProjectStory.vue";
 //v-motion-fade-visible-once
 </script>
