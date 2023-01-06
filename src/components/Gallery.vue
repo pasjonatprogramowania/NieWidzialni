@@ -1,9 +1,7 @@
 
 <template>
   <div>
-    <h1 class="sm:text-3xl text-left text-xl py-10 font-bold text-white px-6">
-      Galeria
-    </h1>
+    <h1 class="sm:text-3xl text-4xl text-left font-bold text-white">Galeria</h1>
     <Carousel
       id="gallery"
       :breakpoints="breakpoints"
@@ -12,7 +10,10 @@
       class="bg-blue-dark-prim w-full"
     >
       <Slide v-for="slide in gallery" :key="slide">
-        <img :src="slide" class="carousel__item h-80 w-full object-contain" />
+        <img
+          :src="slide.src"
+          class="carousel__item h-80 w-full object-contain"
+        />
       </Slide>
       <template #addons>
         <Navigation />
@@ -47,26 +48,26 @@ export default defineComponent({
         },
       },
       gallery: [
-        "/gallery/gallery_1.png",
-        "/gallery/gallery_2.png",
-        "/gallery/gallery_3.png",
-        "/gallery/gallery_4.png",
-        "/gallery/gallery_5.png",
-        "/gallery/gallery_6.png",
-        "/gallery/gallery_7.png",
-        "/gallery/gallery_8.png",
-        "/gallery/gallery_9.png",
-        "/gallery/gallery_10.png",
-        "/gallery/gallery_11.png",
-        "/gallery/gallery_12.png",
-        "/gallery/gallery_13.png",
-        "/gallery/gallery_14.png",
-        "/gallery/gallery_15.png",
-        "/gallery/gallery_16.png",
-        "/gallery/gallery_17.png",
-        "/gallery/gallery_18.png",
-        "/gallery/gallery_19.png",
-        "/gallery/gallery_20.png",
+        { src: "/NieWidzialni/gallery/1.png" },
+        { src: "/NieWidzialni/gallery/2.png" },
+        { src: "/NieWidzialni/gallery/3.png" },
+        { src: "/NieWidzialni/gallery/4.png" },
+        { src: "/NieWidzialni/gallery/5.png" },
+        { src: "/NieWidzialni/gallery/6.png" },
+        { src: "/NieWidzialni/gallery/7.png" },
+        { src: "/NieWidzialni/gallery/8.png" },
+        { src: "/NieWidzialni/gallery/9.png" },
+        { src: "/NieWidzialni/gallery/10.png" },
+        { src: "/NieWidzialni/gallery/11.png" },
+        { src: "/NieWidzialni/gallery/12.png" },
+        { src: "/NieWidzialni/gallery/13.png" },
+        { src: "/NieWidzialni/gallery/14.png" },
+        { src: "/NieWidzialni/gallery/15.png" },
+        { src: "/NieWidzialni/gallery/16.png" },
+        { src: "/NieWidzialni/gallery/17.png" },
+        { src: "/NieWidzialni/gallery/18.png" },
+        { src: "/NieWidzialni/gallery/19.png" },
+        { src: "/NieWidzialni/gallery/20.png" },
       ],
       currentSlide: 0,
     };

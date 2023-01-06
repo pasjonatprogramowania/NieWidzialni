@@ -42,7 +42,7 @@
               </p>
               <div class="mt-8 flex gap-x-4 sm:justify-center">
                 <a
-                  href="#"
+                  href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE4MDE4OTM5ODcxNDU0NzEx?story_media_id=2974329657968638587_56424470879&igshid=YmMyMTA2M2Y="
                   class="
                     inline-block
                     rounded-lg
@@ -63,7 +63,7 @@
                   >
                 </a>
                 <a
-                  href="#"
+                  href="https://instagram.com/niewidzialni.zwzt?igshid=YmMyMTA2M2Y="
                   class="
                     inline-block
                     rounded-lg
