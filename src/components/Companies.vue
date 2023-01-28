@@ -48,17 +48,19 @@ const companies = [
   {
     logo: "companies/KRR.png",
     name: "Samorząd Kochanowskiego",
-    description: "Lena napisz cos mi tu",
+    description:
+      "Sponsorzy projektu, oraz pomagali merytorycznie przy organizacji prelekcji w klasach",
   },
   {
     logo: "companies/MRD.png",
     name: "Młodzieżowa Rada Miasta",
-    description: "Lena napisz cos mi tu",
+    description:
+      "Współpracowaliśmy przy organizacji naszego wydarzenia w szkole muzycznej, oraz promocji projektu w przestrzeni naszego miasta ",
   },
   {
     logo: "companies/BIGA.png",
     name: "Biga Druk Drukarnia Radom",
-    description: "Lena napisz cos mi tu",
+    description: "Sponsor projektu, pod względem materiałów marketingowych",
   },
 ];
 </script>

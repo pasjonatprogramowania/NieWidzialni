@@ -11,12 +11,19 @@
           index % 2 === 0 ? 'justify-end' : 'justify-start sm:pt-96'
         } sm:flex-col`"
       >
-        <div v-motion-slide-visible-once-left>
+        <div v-motion-slide-visible-once-left class="mx-2">
           <h1 class="text-4xl text-center font-bold text-white py-10">
             {{ item.header }}
           </h1>
           <p class="text-xl mb-4 text-black">{{ item.description }}</p>
-          <img :src="item.src" alt="Image" class="mx-auto mb-4 w-52 my-12" />
+          <div>
+            <img
+              :src="item.img"
+              alt="Image"
+              class="mb-4 my-12 object-cover h-48 w-96"
+            />
+            <img :src="item.src" alt="Image" class="mx-auto mb-4 w-52 my-12" />
+          </div>
         </div>
       </div>
     </div>
@@ -29,28 +36,26 @@ export default {
     return {
       items: [
         {
-          header: "Lena napisz cos tu",
+          header: "Organizowaliśmy spotkania w szkołach o zdrowiu psychicznym",
           description:
-            " Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis corporis repudiandae necessitatibus. Eveniet omnis praesentium libero nisi provident doloribus magni! Minima enim accusamus repellat dolor nam quisquam quidem, recusandae provident optio, vitae ipsa voluptate quae fugiat, fuga deleniti suscipit dolores! Nulla optio nostrum ipsa distinctio adipisci magni laboriosam provident cumque praesentium tempora amet, cum, eligendi voluptate fugiat accusamus! Perspiciatis provident nobis dolore eaque, dignissimos necessitatibus.",
+            "Nasz projekt społeczny skupia się na promowaniu zdrowego stylu życia i zapobieganiu chorobom psychicznym u młodzieży. W ramach tego projektu organizowaliśmy spotkania dla młodzieży ze szkół średnich w Kochanowskim oraz w Szkole Plastycznej w Radomiu. Celem tych spotkań było uświadomienie młodzieży o ważności dbania o swoje zdrowie psychiczne oraz udzielanie im wsparcia i informacji na temat szukania pomocy psychologicznej.",
+          img: "storys/1.jpg",
           src: "bg/r-arr.png",
         },
         {
-          header: "elo",
+          header: "Warsztaty w szkole muzycznej",
           description:
-            " Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis corporis repudiandae necessitatibus. Eveniet omnis praesentium libero nisi provident doloribus magni! Minima enim accusamus repellat dolor nam quisquam quidem, recusandae provident optio, vitae ipsa voluptate quae fugiat, fuga deleniti suscipit dolores! Nulla optio nostrum ipsa distinctio adipisci magni laboriosam provident cumque praesentium tempora amet, cum, eligendi voluptate fugiat accusamus! Perspiciatis provident nobis dolore eaque, dignissimos necessitatibus.",
+            "Wraz z Młodzieżową Radą Miasta, zorganizowaliśmy spotkanie w Szkole Muzycznej, podczas którego prowadzone były wywiady z profesjonalistami z branży psychologii. Na spotkanie przyszło prawie 400 osób, a uczestnicy mogli posłuchać ciekawych wykładów i dowiedzieć się więcej na temat zdrowia psychicznego. Dzięki temu projektowi, młodzież mogła uzyskać ważne informacje dotyczące dbania o swoje zdrowie psychiczne.",
+          img: "storys/2.jpg",
           src: "bg/l-arr.png",
         },
+
         {
-          header: "elo",
+          header: "Medialność",
           description:
-            " Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis corporis repudiandae necessitatibus. Eveniet omnis praesentium libero nisi provident doloribus magni! Minima enim accusamus repellat dolor nam quisquam quidem, recusandae provident optio, vitae ipsa voluptate quae fugiat, fuga deleniti suscipit dolores! Nulla optio nostrum ipsa distinctio adipisci magni laboriosam provident cumque praesentium tempora amet, cum, eligendi voluptate fugiat accusamus! Perspiciatis provident nobis dolore eaque, dignissimos necessitatibus.",
+            "Nasz projekt społeczny skupia się na promowaniu zdrowego stylu życia i zapobieganiu chorobom psychicznym u młodzieży. W ostatnim czasie zyskaliśmy dużo uwagi w lokalnych mediach, takich jak Cozadzien, Radio Radom i różne strony internetowe szkół.",
+          img: "storys/3.jpg",
           src: "bg/r-arr.png",
-        },
-        {
-          header: "elo",
-          description:
-            " Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis corporis repudiandae necessitatibus. Eveniet omnis praesentium libero nisi provident doloribus magni! Minima enim accusamus repellat dolor nam quisquam quidem, recusandae provident optio, vitae ipsa voluptate quae fugiat, fuga deleniti suscipit dolores! Nulla optio nostrum ipsa distinctio adipisci magni laboriosam provident cumque praesentium tempora amet, cum, eligendi voluptate fugiat accusamus! Perspiciatis provident nobis dolore eaque, dignissimos necessitatibus.",
-          src: "bg/l-arr.png",
         },
       ],
     };

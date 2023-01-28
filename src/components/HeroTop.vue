@@ -59,7 +59,7 @@
                   "
                 >
                   <span class="text-indigo-200" aria-hidden="true"
-                    >Zobacz Wideo &rarr;</span
+                    >Zobacz Instagram &rarr;</span
                   >
                 </a>
                 <a
