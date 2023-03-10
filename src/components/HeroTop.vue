@@ -8,26 +8,13 @@
             <div>
               <img src="../assets/big-logo.png" alt="" class="my-6" />
               <h1
-                class="
-                  text-blue text-4xl
-                  font-bold
-                  tracking-tight
-                  sm:text-center sm:text-6xl
-                  my-6
-                "
+                class="text-blue text-4xl font-bold tracking-tight sm:text-center sm:text-6xl my-6"
               >
                 <span class="relative whitespace-nowrap text-blue-dark-prim"
                   ><svg
                     aria-hidden="true"
                     viewBox="0 0 418 42"
-                    class="
-                      absolute
-                      top-2/3
-                      left-0
-                      h-[0.58em]
-                      w-full
-                      fill-purple-dark-prim
-                    "
+                    class="absolute top-2/3 left-0 h-[0.58em] w-full fill-purple-dark-prim"
                     preserveAspectRatio="none"
                   >
                     <path
@@ -43,20 +30,8 @@
               <div class="mt-8 flex gap-x-4 sm:justify-center">
                 <a
                   href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE4MDE4OTM5ODcxNDU0NzEx?story_media_id=2974329657968638587_56424470879&igshid=YmMyMTA2M2Y="
-                  class="
-                    inline-block
-                    rounded-lg
-                    bg-blue-prim
-                    px-4
-                    py-1.5
-                    text-base
-                    font-semibold
-                    leading-7
-                    text-white
-                    shadow-sm
-                    ring-1 ring-purple-prim
-                    hover:bg-blue-dark-prim hover:ring-purple-dark-prim
-                  "
+                  target="_blank"
+                  class="inline-block rounded-lg bg-blue-prim px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-purple-prim hover:bg-blue-dark-prim hover:ring-purple-dark-prim"
                 >
                   <span class="text-indigo-200" aria-hidden="true"
                     >Zobacz Instagram &rarr;</span
@@ -64,19 +39,8 @@
                 </a>
                 <a
                   href="https://instagram.com/niewidzialni.zwzt?igshid=YmMyMTA2M2Y="
-                  class="
-                    inline-block
-                    rounded-lg
-                    px-4
-                    py-1.5
-                    text-bold
-                    font-semibold
-                    leading-7
-                    text-gray-900
-                    bg-white
-                    ring-1 ring-purple-dark-prim
-                    hover:ring-purple-dark-prim hover:bg-grey
-                  "
+                  target="_blank"
+                  class="inline-block rounded-lg px-4 py-1.5 text-bold font-semibold leading-7 text-gray-900 bg-white ring-1 ring-purple-dark-prim hover:ring-purple-dark-prim hover:bg-grey"
                 >
                   Więcej o nas
                 </a>

@@ -1,32 +1,42 @@
 <template>
-  <div>
-    <h1 class="px-6 sm:text-3xl text-4xl text-left py-10 font-bold text-white">
-      Historia Projektu
-    </h1>
-    <div class="flex flex-wrap">
-      <div
-        v-for="(item, index) in items"
-        :key="item"
-        :class="`sm:w-1/2 w-full sm:text-left text-center${
-          index % 2 === 0 ? 'justify-end' : 'justify-start sm:pt-96'
-        } sm:flex-col`"
-      >
-        <div v-motion-slide-visible-once-left class="mx-2">
-          <h1 class="text-4xl text-center font-bold text-white py-10">
-            {{ item.header }}
-          </h1>
-          <p class="text-xl mb-4 text-black">{{ item.description }}</p>
-          <div>
-            <img
-              :src="item.img"
-              alt="Image"
-              class="mb-4 my-12 object-cover h-48 w-96"
-            />
-            <img :src="item.src" alt="Image" class="mx-auto mb-4 w-52 my-12" />
+  <h1 class="px-6 sm:text-3xl text-4xl text-left py-10 font-bold text-white">
+    Nasze statystyki
+  </h1>
+  <div class="py-5 px-6">
+    <main class="h-full overflow-y-auto">
+      <div class="container mx-auto grid">
+        <div class="grid gap-6 mb-8 md:grid-cols-2 xl:grid-cols-3">
+          <div
+            class="flex items-center p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800"
+            v-for="i in items"
+            :key="i.name"
+          >
+            <div
+              class="p-3 mr-4 text-orange-500 bg-orange-100 rounded-full dark:text-orange-100 dark:bg-orange-500"
+            >
+              <img :src="i.src" :alt="i.name" class="w-20" />
+            </div>
+            <div>
+              <p
+                class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400"
+              >
+                {{ i.name }}
+              </p>
+              <p class="text-lg font-semibold text-gray-700 dark:text-gray-200">
+                Dotarliśmy do {{ i.number }} osób
+              </p>
+              <a
+                :href="i.link"
+                target="_blank"
+                class="inline-block rounded-lg px-4 py-1.5 text-bold font-semibold leading-7 text-gray-900 text-white bg-blue-prim ring-1 ring-purple-dark-prim hover:ring-purple-dark-prim hover:bg-blue-dark-prim"
+              >
+                Więcej o nas
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </main>
   </div>
 </template>
 
@@ -36,26 +46,22 @@ export default {
     return {
       items: [
         {
-          header: "Organizowaliśmy spotkania w szkołach o zdrowiu psychicznym",
-          description:
-            "Nasz projekt społeczny skupia się na promowaniu zdrowego stylu życia i zapobieganiu chorobom psychicznym u młodzieży. W ramach tego projektu organizowaliśmy spotkania dla młodzieży ze szkół średnich w Kochanowskim oraz w Szkole Plastycznej w Radomiu. Celem tych spotkań było uświadomienie młodzieży o ważności dbania o swoje zdrowie psychiczne oraz udzielanie im wsparcia i informacji na temat szukania pomocy psychologicznej.",
-          img: "storys/1.jpg",
-          src: "bg/r-arr.png",
+          src: "/companies/tik.png",
+          name: "TikTok",
+          number: "56 000",
+          link: "https://www.tiktok.com/@niewidzialni.zwzt",
         },
         {
-          header: "Warsztaty w szkole muzycznej",
-          description:
-            "Wraz z Młodzieżową Radą Miasta, zorganizowaliśmy spotkanie w Szkole Muzycznej, podczas którego prowadzone były wywiady z profesjonalistami z branży psychologii. Na spotkanie przyszło prawie 400 osób, a uczestnicy mogli posłuchać ciekawych wykładów i dowiedzieć się więcej na temat zdrowia psychicznego. Dzięki temu projektowi, młodzież mogła uzyskać ważne informacje dotyczące dbania o swoje zdrowie psychiczne.",
-          img: "storys/2.jpg",
-          src: "bg/l-arr.png",
+          src: "/companies/fa.png",
+          name: "Facebook",
+          number: "7 572",
+          link: "https://www.facebook.com/niewidzialni.zwzt",
         },
-
         {
-          header: "Medialność",
-          description:
-            "Nasz projekt społeczny skupia się na promowaniu zdrowego stylu życia i zapobieganiu chorobom psychicznym u młodzieży. W ostatnim czasie zyskaliśmy dużo uwagi w lokalnych mediach, takich jak Cozadzien, Radio Radom i różne strony internetowe szkół.",
-          img: "storys/3.jpg",
-          src: "bg/r-arr.png",
+          src: "/companies/ins.png",
+          name: "Instagram",
+          number: "1 652",
+          link: "https://instagram.com/niewidzialni.zwzt?igshid=YmMyMTA2M2Y=",
         },
       ],
     };

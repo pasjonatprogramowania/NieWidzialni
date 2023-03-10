@@ -1,7 +1,9 @@
 
 <template>
   <div>
-    <h1 class="sm:text-3xl text-4xl text-left font-bold text-white">Galeria</h1>
+    <h1 class="px-6 sm:text-3xl text-4xl text-left py-10 font-bold text-white">
+      Galeria
+    </h1>
     <Carousel
       id="gallery"
       :breakpoints="breakpoints"
@@ -48,26 +50,26 @@ export default defineComponent({
         },
       },
       gallery: [
-        { src: "/NieWidzialni/gallery/1.png" },
-        { src: "/NieWidzialni/gallery/2.png" },
-        { src: "/NieWidzialni/gallery/3.png" },
-        { src: "/NieWidzialni/gallery/4.png" },
-        { src: "/NieWidzialni/gallery/5.png" },
-        { src: "/NieWidzialni/gallery/6.png" },
-        { src: "/NieWidzialni/gallery/7.png" },
-        { src: "/NieWidzialni/gallery/8.png" },
-        { src: "/NieWidzialni/gallery/9.png" },
-        { src: "/NieWidzialni/gallery/10.png" },
-        { src: "/NieWidzialni/gallery/11.png" },
-        { src: "/NieWidzialni/gallery/12.png" },
-        { src: "/NieWidzialni/gallery/13.png" },
-        { src: "/NieWidzialni/gallery/14.png" },
-        { src: "/NieWidzialni/gallery/15.png" },
-        { src: "/NieWidzialni/gallery/16.png" },
-        { src: "/NieWidzialni/gallery/17.png" },
-        { src: "/NieWidzialni/gallery/18.png" },
-        { src: "/NieWidzialni/gallery/19.png" },
-        { src: "/NieWidzialni/gallery/20.png" },
+        { src: "/gallery/1.png" },
+        { src: "/gallery/2.png" },
+        { src: "/gallery/3.png" },
+        { src: "/gallery/4.png" },
+        { src: "/gallery/5.png" },
+        { src: "/gallery/6.png" },
+        { src: "/gallery/7.png" },
+        { src: "/gallery/8.png" },
+        { src: "/gallery/9.png" },
+        { src: "/gallery/10.png" },
+        { src: "/gallery/11.png" },
+        { src: "/gallery/12.png" },
+        { src: "/gallery/13.png" },
+        { src: "/gallery/14.png" },
+        { src: "/gallery/15.png" },
+        { src: "/gallery/16.png" },
+        { src: "/gallery/17.png" },
+        { src: "/gallery/18.png" },
+        { src: "/gallery/19.png" },
+        { src: "/gallery/20.png" },
       ],
       currentSlide: 0,
     };

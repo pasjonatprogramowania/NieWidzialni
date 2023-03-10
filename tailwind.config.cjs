@@ -17,6 +17,7 @@ module.exports = {
       "orange-prim": "#e67e22",
       "grey": "#CAC0CE",
       "dark": "#121212"
+      , "white-prime": "#fff"
     },
     extend: {},
   },
