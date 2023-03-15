@@ -34,11 +34,7 @@ const companies = [
   },
   {
     logo: "companies/4.png",
-    name: "Biga Druk Drukarnia Radom",
-  },
-  {
-    logo: "companies/5.jpg",
-    name: "Biga Druk Drukarnia Radom",
+    name: "Młodzieżowa Rada Miasta",
   },
   {
     logo: "companies/6.png",
