@@ -32,7 +32,7 @@ const content = [
       "Wydarzenie odbyło się w Sali Koncertowej Zespołu Szkół Muzycznych im. Oskara Kolberga w Radomiu. Podczas naszego panelu przedstawiliśmy jak w tych czasach niewidzialna dla społeczeństwa jest młodzież z problemami, jak nasze potrzeby są pomijane i minimalizowane oraz jak słowa mają ogromną wagę dla młodego człowieka.",
   },
   {
-    name: `Wystawa "(NIE)WIDZIALNI"`,
+    name: `Wystawa (NIE)WIDZIALNI`,
     description:
       "Nasz zespół we współpracy z Zespołem Szkół Plastycznych im. Józefa Brandta zorganizował wystawę dotyczącą doświadczeń emocjonalnych młodzieży, która była dostępna przez miesiąc w Resursie Obywatelskiej w Radomiu.",
   },
@@ -44,7 +44,7 @@ const content = [
   {
     name: "Zbiórka funduszy",
     description:
-      "Wspólnymi siłami z społecznością Radomia udało nam się zebrać 1136 zł na podsumowanie naszego projektu.",
+      "Wspólnymi siłami z społecznością Radomia udało nam się zebrać 1496 zł na podsumowanie naszego projektu.",
   },
 ];
 </script>

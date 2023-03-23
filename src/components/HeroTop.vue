@@ -22,7 +22,6 @@
                     ></path></svg
                   ><span class="relative">Zobacz nas</span></span
                 >
-                i nasze problemy
               </h1>
               <p class="mt-6 text-lg leading-8 text-gray-600 sm:text-center">
                 Razem dla zdrowia psychicznego młodzieży
@@ -33,8 +32,8 @@
                   target="_blank"
                   class="inline-block rounded-lg bg-blue-prim px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-purple-prim hover:bg-blue-dark-prim hover:ring-purple-dark-prim"
                 >
-                  <span class="text-indigo-200" aria-hidden="true"
-                    >Zobacz Instagram &rarr;</span
+                  <span class="text-indigo-200 row" aria-hidden="true"
+                    >Zobacz Instagram</span
                   >
                 </a>
                 <a
@@ -42,7 +41,7 @@
                   target="_blank"
                   class="inline-block rounded-lg px-4 py-1.5 text-bold font-semibold leading-7 text-gray-900 bg-white ring-1 ring-purple-dark-prim hover:ring-purple-dark-prim hover:bg-grey"
                 >
-                  Więcej o nas
+                  Więcej
                 </a>
               </div>
             </div>
